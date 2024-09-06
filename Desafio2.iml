@@ -1,0 +1,28 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Digite uma string: ");
+        string palavra = Console.ReadLine();
+
+        int contador = 0;
+
+        for (int i = 0; i < palavra.Length; i++)
+        {
+            char letra = palavra[i];
+            if (letra == 'a' || letra == 'A')
+            {
+                contador++;
+            }
+        }
+
+        if (contador > 0)
+        {
+            Console.WriteLine("A letra 'a' ou 'A' aparece " + contador + " vezes.");
+        }
+        else
+        {
+            Console.WriteLine("A letra 'a' ou 'A' não foi encontrada.");
+        }
+    }
+}
